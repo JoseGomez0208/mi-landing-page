@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Comidas Favoritas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mis 3 Comidas Favoritas</h1>
+    </header>
+
+    <main class="container">
+        <!-- Imagen representativa -->
+        <div class="image-section">
+            <img src="https://placeholder.com" alt="Plato de comida delicioso" class="responsive-img">
+        </div>
+
+        <!-- Lista ordenada -->
+        <section class="list-section">
+            <h2>Mi Top 3</h2>
+            <ol>
+                <li>Pizza napolitana</li>
+                <li>Sushi variado</li>
+                <li>Tacos al pastor</li>
+            </ol>
+            
+            <!-- Botón que cambia de color -->
+            <button class="btn-color">¡Buen provecho!</button>
+        </section>
+    </main>
+
+</body>
+</html>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Imagen responsiva */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Lista ordenada */
+ol {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Botón con efecto hover */
+.btn-color {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-color:hover {
+    background-color: #c70039; /* Color al pasar el mouse */
+}
+
+/* Diseño responsivo con Media Queries */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: auto;
+    }  
+    
+    .image-section, .list-section {
+        flex: 1;
+        padding: 20px;
+    }
+}  
